@@ -1,12 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { FaGoogle, FaFacebook } from 'react-icons/fa';
 
 function Loginform() {
   return (
     <div>
       <div>
-        <Button className='loginbtn2 w-100 mb-2' variant="outline-secondary"><i className="bi bi-google" style={{ marginRight: '95px' }}></i> Continue with Google</Button>
-        <Button className='loginbtn2 w-100' variant="outline-secondary"><i className="bi bi-facebook" style={{ marginRight: '100px' }}></i> Continue with Facebook</Button>
+        <Button className='loginbtn2 w-100 mb-2' variant="outline-secondary"><FaGoogle /> Continue with Google</Button>
+        <Button className='loginbtn2 w-100' variant="outline-secondary"><FaFacebook /> Continue with Facebook</Button>
       </div>
       <div className="d-flex align-items-center mt-3">
         <div style={{ flex: 1, backgroundColor: "grey", height: "3px" }} />

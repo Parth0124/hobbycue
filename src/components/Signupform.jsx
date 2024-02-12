@@ -6,8 +6,8 @@ function Signupform() {
   return (
     <div className="loginform">
       <div>
-        <Button className='loginbtn2 w-100 mb-2' variant="outline-secondary"><i className="bi bi-google" style={{ marginRight: '95px' }}></i> Continue with Google</Button>
-        <Button className='loginbtn2 w-100' variant="outline-secondary"><i className="bi bi-facebook" style={{ marginRight: '100px' }}></i> Continue with Facebook</Button>
+        <Button className='loginbtn2 w-100 mb-2' variant="outline-secondary"><i className="bi bi-google" style={{ marginRight: '5px' }}></i> Continue with Google</Button>
+        <Button className='loginbtn2 w-100' variant="outline-secondary"><i className="bi bi-facebook" style={{ marginRight: '5px' }}></i> Continue with Facebook</Button>
       </div>
       <div className="d-flex align-items-center mt-3">
         <div style={{ flex: 1, backgroundColor: "grey", height: "3px" }} />
@@ -27,9 +27,11 @@ function Signupform() {
             id="default-checkbox"
             label="Remember me"
             aria-label="option 1"
-            style={{ marginRight: '10px', marginBottom: '0' }}
+            style={{ marginRight: '40px', marginBottom: '0' }} // Increased margin
           />
-          <span style={{ marginRight: '120px' }}></span><i className="bi bi-lock-fill"></i>
+          <span style={{ marginRight: '20px' }}></span>
+          <i className="bi bi-lock-fill"></i>
+          <span style={{ marginRight: '20px' }}></span> {/* Increased space between the lock icon and the link */}
           <a href="#" style={{ textDecoration: 'none', color: '#000' }}>Forgot Password</a>
         </div>
         <Button className='btnsubmit w-100' variant="primary" type="submit">
