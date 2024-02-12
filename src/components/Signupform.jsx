@@ -1,8 +1,12 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FormCheck from 'react-bootstrap/FormCheck';
+import Uponsignup from './Uponsignup'; 
 
-function Signupform() {
+function Signupform({ isSignupPage }) {
+  const cardTypes = ['people', 'place'];
+
   return (
     <div className="loginform">
       <div>
@@ -27,17 +31,19 @@ function Signupform() {
             id="default-checkbox"
             label="Remember me"
             aria-label="option 1"
-            style={{ marginRight: '40px', marginBottom: '0' }} // Increased margin
+            style={{ marginRight: '40px', marginBottom: '0' }} 
           />
           <span style={{ marginRight: '20px' }}></span>
           <i className="bi bi-lock-fill"></i>
-          <span style={{ marginRight: '20px' }}></span> {/* Increased space between the lock icon and the link */}
+          <span style={{ marginRight: '20px' }}></span> 
           <a href="#" style={{ textDecoration: 'none', color: '#000' }}>Forgot Password</a>
         </div>
         <Button className='btnsubmit w-100' variant="primary" type="submit">
           Continue
         </Button>
       </Form>
+
+      {isSignupPage && <Uponsignup cardTypes={cardTypes} />}
     </div>
   );
 }
