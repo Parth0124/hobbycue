@@ -1,0 +1,88 @@
+.nav .navbar {
+    background-color: #fff;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    color: #8064a2;
+  
+}
+
+.form-control {
+ display: flex;
+    color: #ffffff;
+    margin-right: 0 !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+.searcharea input{
+    margin-right: 0 !important;
+    padding: 10px;
+    width: 300px;
+}
+
+
+.searchbtn {
+    color: #fff;
+    background-color: #8064a2;
+    border-color: #8064a2;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   margin-left: 0;
+   width: 50px;
+
+}
+.searchbtn:hover {
+ 
+    background-color: #8064a2;
+    border-color: #8064a2;
+}
+/* .icons{
+    display: flex;
+margin-left: 300px;
+padding-left: 130px;
+
+} */
+.icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (max-width: 576px) {
+    .icons {
+      justify-content: flex-start;
+    }
+  }
+  @media (min-width: 576px){
+    .icons{
+        margin-left: 300px;
+        padding-left: 130px;
+    }
+  }
+  
+
+.logo img{
+    width: 180px;
+    margin-left: 50px;
+    
+}
+p{
+    font-size: 15px;
+    padding-top: 8px;
+}
+.signinbtn{
+    width: 112px;
+    height: 40px;
+    margin-right: 40px;
+border-color: #8064a2;
+color: #8064a2;
+}
+.signinbtn:hover{
+   background-color: #8064a2;
+border-color: #8064a2;
+color: #ffffff;
+}
