@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className='bg-light text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -147,7 +149,7 @@ const Footer = () => {
       </section>
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        <p><b>© Purple Cues Private Limited</b> </p>
+        <p><b>© Copyright. All Rights Reserved. {currentYear}</b> </p>
     
       </div>
     </footer>

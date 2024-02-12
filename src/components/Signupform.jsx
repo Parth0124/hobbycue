@@ -43,7 +43,7 @@ function Signupform({ isSignupPage }) {
         </Button>
       </Form>
 
-      {isSignupPage && <Uponsignup cardTypes={cardTypes} />}
+      {isSignupPage && <Uponsignup cardTypes={cardTypes} />} {/* Render Uponsignup only if isSignupPage is true */}
     </div>
   );
 }
